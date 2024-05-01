@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/login.css" />
   </head>
   <body>
     <div id="container">
@@ -35,7 +36,29 @@
               </button>
               <a class="logo" href="/">ECINE</a>
             </div>
-
+            <div class="header__middle__wrap">
+              <div class="loginIdPassword">
+                <section>
+                    <button type="button" class="modal_btn">login</button>
+                </section>
+        
+                <div class="modal">
+                    <div class="modal_popup">
+                        <div><button type="click" class="modal_close">x</button> </div>  
+                        <h1>ECINE</h1>
+                        <h3>로그인</h3>
+                        <form id="loginForm">
+                            <input id="idInput" type="text" placeholder="아이디를 입력하세요." required/><br>
+                            <input id="pwInput" type="password" placeholder="비밀번호를 입력하세요." required/>
+                            <button type="submit" class="login_btn">로그인</button> <br>
+                        </form>
+                        
+                        <div><button type="submit" class="pwSearch">아이디 / 비밀번호 찾기</button></div>
+                        <div class="rkdlq">계정이 없으신가요? <button type="submit" class="enter">회원가입</button></div>
+                    </div>
+                </div>
+              </div>
+            </div>
             <div class="header__right__wrap">
               <div class="header__search__box">
                 <input type="text" placeholder="검색어를 입력해주세요." />
@@ -126,5 +149,6 @@
     </div>
 
     <script src="./js/common.js"></script>
+    <script src="./js/login.js"></script>
   </body>
 </html>
